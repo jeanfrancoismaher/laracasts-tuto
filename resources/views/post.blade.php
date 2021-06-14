@@ -1,10 +1,4 @@
-<!doctype html>
-
-<head></head>
-
-<link rel="stylesheet" href="/app.css">
-
-<body>
+<x-layout>
     <article>
         <h1>
             {{ $post->title }}
@@ -16,4 +10,4 @@
     </article>
 
     <a href="/">Go back</a>
-</body>
+</x-layout>
