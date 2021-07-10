@@ -8,7 +8,7 @@
             </h1>
 
             <p>
-                Written by <a href="/users/{{ $post->user->id }}"> {{ $post->user->username }} </a> in <a href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }} </a>
+                <a href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }} </a>
             </p>
             
             <div>

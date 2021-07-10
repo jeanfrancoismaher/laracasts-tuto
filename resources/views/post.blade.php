@@ -4,10 +4,12 @@
             {{ $post->title }}
         </h1>
 
-        <a href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }}</a>
+        Written by <a href="/users/{{ $post->user->name }}"> {{ $post->user->username }} </a> in <a href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }}</a>
 
         <div>
-            {!! $post->body !!}
+        <p>
+            {{ $post->body }}
+        </p>
         </div>
     </article>
 
