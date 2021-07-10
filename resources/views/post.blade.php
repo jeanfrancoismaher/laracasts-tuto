@@ -4,7 +4,9 @@
             {{ $post->title }}
         </h1>
 
-        Written by <a href="/user/{{ $post->user->id }}"> {{ $post->user->username }} </a> in <a href="/category/{{ $post->category->slug }}"> {{ $post->category->name }}</a>
+        <p>
+            Written by <a href="/author/{{ $post->author->username }}"> {{ $post->author->name }} </a> in <a href="/category/{{ $post->category->slug }}"> {{ $post->category->name }}</a>
+        </p>
 
         <div>
         <p>
