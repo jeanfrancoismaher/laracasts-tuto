@@ -9,9 +9,7 @@
         <div class="flex-1 flex flex-col justify-between">
             <header class="mt-8 lg:mt-0">
                 <div class="space-x-2">
-                    <a href="#"
-                        class="px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase font-semibold"
-                        style="font-size: 10px"> {{ $post->category->name }}</a>
+                    <x-tag :category="$post->category"/>
                 </div>
 
                 <div class="mt-4">
@@ -20,7 +18,7 @@
                     </h1>
 
                     <span class="mt-2 block text-gray-400 text-xs">
-                            Published <time> {{ $post->created_at->diffForHumans() }}</time>
+                            Published <time>{{ $post->created_at->diffForHumans() }}</time>
                         </span>
                 </div>
             </header>
