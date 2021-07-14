@@ -14,12 +14,12 @@
 
                 <div class="mt-4">
                     <h1 class="text-3xl">
-                        {{ $post->title }}
+                        <a href="/posts/{{ $post->slug }}">{{ $post->title }}</a> 
                     </h1>
 
                     <span class="mt-2 block text-gray-400 text-xs">
-                            Published <time>{{ $post->created_at->diffForHumans() }}</time>
-                        </span>
+                        Published <time>{{ $post->created_at->diffForHumans() }}</time>
+                    </span>
                 </div>
             </header>
 
@@ -34,7 +34,6 @@
                     <img src="/images/lary-avatar.svg" alt="Lary avatar">
                     <div class="ml-3">
                         <h5 class="font-bold">{{ $post->author->name }}</h5>
-                        <h6>Mascot at Laracasts</h6>
                     </div>
                 </div>
 
